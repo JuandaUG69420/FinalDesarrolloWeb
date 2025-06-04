@@ -1,0 +1,21 @@
+<div class="login-box">
+    <div class="login-header">
+        <header>Registro</header>
+    </div>
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="Nombre" autocomplete="off" required [(ngModel)]="nombre">
+    </div>
+    <div class="input-box">
+        <input type="email" class="input-field" placeholder="Email" autocomplete="off" required [(ngModel)]="email">
+    </div>
+    <div class="input-box">
+        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required [(ngModel)]="password">
+    </div>
+    <div class="input-submit">
+        <button class="submit-btn" id="submit" (click)="registrarUsuario()"></button>
+        <label for="submit">Registrar</label>
+    </div>
+    <div class="sign-up-link">
+        <p>¿Ya tienes una cuenta? <a (click)="irAlLogin()">Iniciar sesión</a></p>
+    </div>
+</div>
